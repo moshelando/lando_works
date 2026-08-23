@@ -104,9 +104,13 @@ a{color:inherit}
 .practice-story p{max-width:535px;margin:0 0 22px;font-size:17px}
 .practice-image{padding-bottom:105px}
 .practice-image img{width:100%;height:clamp(300px,40vw,520px);object-fit:cover;object-position:center 56%;filter:saturate(.88) contrast(.96)}
-.practice-image-hero{padding:0;background:var(--warm)}
-.practice-image-hero img{height:clamp(390px,47vw,680px);object-position:center 56%}
-.practice-image-hero+.practice-hero{padding-top:72px}
+.practice-image-hero{position:relative;overflow:hidden;padding:0;background:var(--evergreen);color:white}
+.practice-image-hero img{height:clamp(500px,56vw,760px);object-position:center 56%}
+.practice-image-hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,47,37,.9) 0%,rgba(5,47,37,.68) 39%,rgba(5,47,37,.17) 67%,rgba(5,47,37,.03) 100%)}
+.practice-hero-copy{position:absolute;z-index:1;bottom:clamp(48px,8vw,110px);left:0;max-width:780px}
+.practice-hero-copy .eyebrow{margin-bottom:22px}
+.practice-hero-copy h1{max-width:690px;margin:0;font:500 clamp(62px,7vw,106px)/.94 var(--display);letter-spacing:-.04em}
+.practice-hero-copy>p:last-child{max-width:405px;margin:30px 0 0;font-size:17px;color:#e3f5e9}
 .contact-hero{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);align-items:stretch;background:var(--mint-soft);padding:0}
 .contact-hero>div{display:flex;flex-direction:column;justify-content:flex-end;padding:78px clamp(32px,6vw,96px) 78px clamp(22px,8vw,128px)}
 .contact-hero h1{max-width:570px;margin:0;font:500 clamp(54px,5.9vw,86px)/.94 var(--display);letter-spacing:-.04em}
@@ -171,8 +175,10 @@ a{color:inherit}
   .practice-image{padding-bottom:72px}
   .practice-image img{height:50svh;min-height:320px}
   .practice-image-hero{padding:0}
-  .practice-image-hero img{height:48svh;min-height:340px}
-  .practice-image-hero+.practice-hero{padding-top:62px}
+  .practice-image-hero img{height:68svh;min-height:500px;object-position:65% center}
+  .practice-image-hero::after{background:linear-gradient(90deg,rgba(5,47,37,.93),rgba(5,47,37,.64) 62%,rgba(5,47,37,.18))}
+  .practice-hero-copy{right:22px;bottom:52px;left:0;max-width:none}
+  .practice-hero-copy h1{font-size:clamp(52px,14vw,74px)}
   .contact-hero{grid-template-columns:1fr}
   .contact-hero>div{order:2;padding:64px 22px 70px}
   .contact-hero>img{order:1;min-height:340px;height:46svh}
