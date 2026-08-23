@@ -70,9 +70,9 @@ img { max-width: 100%; }
 .project-secondary { width: 48%; height: 58%; right: 5%; bottom: 6%; }
 .work-fieldstone .project-visual { background: #b9ae8e; }
 .work-fieldstone .project-primary { object-position: 50% 0; }
-.work-maison .project-visual { background: #1b1a1a; }
-.work-maison .project-primary { left: auto; right: 6%; }
-.work-maison .project-secondary { right: auto; left: 5%; }
+.work-rowan .project-visual { background: #d7dfd4; }
+.work-rowan .project-primary { left: auto; right: 6%; }
+.work-rowan .project-secondary { right: auto; left: 5%; }
 .work-northline .project-visual { background: #c8c2b4; }
 .work-northline .project-primary { width: 72%; height: 75%; }
 .work-northline .project-secondary { width: 52%; height: 60%; }
