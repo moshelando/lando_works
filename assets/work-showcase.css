@@ -1,0 +1,76 @@
+/* The portfolio is an index of sites, not a set of miniature browser windows. */
+.work-showcase {
+  padding-block: 104px 112px;
+}
+
+.work-heading {
+  margin-bottom: 60px;
+}
+
+.work-grid {
+  gap: 70px 30px;
+}
+
+.project-visual {
+  aspect-ratio: 1.455;
+  background: transparent;
+}
+
+.project-visual img.project-primary {
+  position: static;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  box-shadow: none;
+  transition: transform .35s ease;
+}
+
+.project-secondary {
+  display: none;
+}
+
+.work-fieldstone .project-visual,
+.work-northline .project-visual,
+.work-milemarker .project-visual,
+.work-rowan .project-visual {
+  background: transparent;
+}
+
+.work-card:hover .project-primary {
+  transform: scale(1.018);
+  filter: none;
+}
+
+.project-meta {
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  gap: 16px;
+  padding-top: 17px;
+  border-top: 1px solid color-mix(in srgb, var(--ink) 16%, transparent);
+}
+
+.work-card strong {
+  font-size: 24px;
+}
+
+.work-card small {
+  font-size: 11px;
+}
+
+.work-card b {
+  font-size: 19px;
+}
+
+@media (max-width: 760px) {
+  .work-showcase {
+    padding-block: 72px 78px;
+  }
+
+  .work-heading {
+    margin-bottom: 38px;
+  }
+
+  .work-grid {
+    gap: 48px;
+  }
+}
