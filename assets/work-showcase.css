@@ -1,14 +1,14 @@
 /* The portfolio is an index of sites, not a set of miniature browser windows. */
 .work-showcase {
-  padding-block: 104px 112px;
+  padding-block: 76px 88px;
 }
 
 .work-heading {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .work-grid {
-  gap: 70px 30px;
+  gap: 48px 30px;
 }
 
 .project-visual {
@@ -30,7 +30,6 @@
   display: none;
 }
 
-.work-fieldstone .project-visual,
 .work-northline .project-visual,
 .work-milemarker .project-visual,
 .work-rowan .project-visual {
@@ -61,16 +60,44 @@
   font-size: 19px;
 }
 
+/* A compact editorial crop keeps the landscape headline readable at card size. */
+.fieldstone-preview,
+.work-fieldstone .project-visual.fieldstone-preview,
+.hero-work-item > .fieldstone-preview {
+  container-type: inline-size;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  padding: 6%;
+  background: linear-gradient(90deg, #0a1b12a6, #0a1b1220), url('../projects/fieldstone-landscape/assets/hero-terraced-garden.webp') center / cover;
+  color: #fff;
+}
+.fieldstone-preview .fieldstone-preview-logo {
+  position: static;
+  display: block;
+  width: 34%;
+  height: auto;
+  object-fit: contain;
+  box-shadow: none;
+}
+.fieldstone-preview-title {
+  display: block;
+  align-self: end;
+  padding-bottom: 2%;
+  font: 400 10cqw / 1.04 Georgia, serif;
+  letter-spacing: -.045em;
+}
+.fieldstone-preview-title > span { display: block; }
+
 @media (max-width: 760px) {
   .work-showcase {
-    padding-block: 72px 78px;
+    padding-block: 56px 64px;
   }
 
   .work-heading {
-    margin-bottom: 38px;
+    margin-bottom: 30px;
   }
 
   .work-grid {
-    gap: 48px;
+    gap: 36px;
   }
 }
