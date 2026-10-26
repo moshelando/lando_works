@@ -62,8 +62,7 @@
 
 /* A compact editorial crop keeps the landscape headline readable at card size. */
 .fieldstone-preview,
-.work-fieldstone .project-visual.fieldstone-preview,
-.hero-work-item > .fieldstone-preview {
+.work-fieldstone .project-visual.fieldstone-preview {
   container-type: inline-size;
   display: grid;
   grid-template-rows: auto 1fr;
